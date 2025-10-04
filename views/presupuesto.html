@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTechnology</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <!--Header Cabecera de la pagina-->
+     <header>
+        <div>
+            <img src="../images/iTech_logo1.png" alt="iTech_logo1.png" width="196" height="183">
+            <h1>íTechnology</h1>
+        </div>
+            
+        <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a class="presupuesto" href="./presupuesto.html">Presupuesto</a></li>
+                    <li><a href="./productos.html">Producto</a></li>
+                </ul>
+                <form>
+                    <input type="search" placeholder="Buscar">
+                    <input type="submit" value="Go">
+                </form>
+        </nav>
+    </header>
+    <main>
+        <section>
+                <h3>Presupuesto</h3>
+                    <h2>En iTechnology queremos conocer tus comentarios y sugerencias.</h2>
+                    <p>Rellena el formulario y ayúdanos a conocer tu opinión.
+                    Si no puedes enviar el presente formulario puedes remitirnos un e-mail con tu comentario a:
+                    </p>
+                <div>
+                    <ul>
+                        <li><strong>Pedido en la tienda online:</strong> <a href="#">ventaonline@itechnology.com</a></li>
+                        <li><strong>Reparación en tienda:</strong> contacta directamente con tu tienda de iTechnology <a href="#">reparacion@itechnology</a></li>
+                        <li><strong>Dudas comentarios sobre un producto o servicio:</strong> <a href="#">informaciones@itechnology.com</a></li>
+                    </ul>
+                </div>
+        </section>
+       
+        <section>
+            <h4>Puede rellenar el formulario</h4>
+            <form class="pre-form">
+               <div>
+                    <label for="Nombre_y_Appelidos">Nombre</label>
+                    <input type="text" id="Nombre_y_Appelidos" name="Nombre y Appelidos" pattern="[a-zA-Z áÁéÉíÍóÓúÚñÑüÜ]+" placeholder="Tu nombre y Appelidos" size="20" maxlength="50" required>
+            
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z0-9_]{2,5}" placeholder="Tu correo electronico" size="20" maxlength="50" required>
+                
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" name="tel" id="telefono" pattern="[0-9]{9}" placeholder="Escribe tu número" required>
+               
+                    <label for="mensaje">Solicite más información</label>
+                    <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu mensaje" maxlength="1500"></textarea>
+                    
+                    <label for="politicas">Política de privacidad</label>
+                    <input type="checkbox" name="info" id="politicas" required>
+                    
+                    <input type="submit" value="Enviar">
+                </div>
+               
+            </form>
+        </section>
+     </main>
+    <!--FOOTER EL PIE DE LA PAGINA-->
+     <footer>
+        <!--Footer del bloque de los Servicios-->
+        <div class="contenido-footer">
+            <div>
+                    <h3>Nuestros servicios</h3>
+                    <ul class="lista-servicio">
+                        <li><a href="#"></a>KIT DIGITAL</li>
+                        <li><a href="#"></a>Servicio técnico</li>
+                        <li><a href="#"></a>Reparación Portátiles</li>
+                        <li><a href="#"></a>Reparación de Móviles</li>
+                    </ul>
+            </div>
+            <!--Footer del bloque de los horarios-->
+            <div>
+                    <h3>Nuestros horarios</h3>
+                    <ul class="lista-horario">
+                        <li>✅Lunes 9:00-20:00</li>
+                        <li>✅Martes 9:00-20:00</li>
+                        <li>✅Miercol9:00-20:00</li>
+                        <li>✅Jueves 9:00-20:00</li>
+                        <li>✅Viernes 9:00-20:00</li>
+                        <li>❌Sabado Cerrado</li>
+                        <li>❌Sabado Cierra</li>
+                    </ul>
+            </div>
+            <!--Footer del bloque de los Redes Sociales-->
+            <div>
+                    <h3>Nuestros Redes</h3>
+                    <ul class="lista-redes">
+                        <li><a href="https://es-es.facebook.com/"><img src="../images/facebook.jpg" alt="facebook" width="626" height="626" >Facebook</a></li>
+                        <li><a href="https://www.instagram.com/"><img src="../images/instagram.jpg" alt="instagram" width="980" height="980">Instagram</a></li>
+                        <li><a href="https://x.com/"><img src="../images/X.png" alt="x" width="750" height="500">Rede X</a></li>
+                        <li><a href="https://www.tiktok.com/"><img src="../images/tiktok.png" alt="tik tok" width="920" height="920" >Tik Tok</a></li>
+                        <li><a href="https://www.youtube.com/"><img src="../images/youtube.jpg" alt="youtube" width="1920" height="1920">Youtube</a></li>
+                        <li><a href="https://web.whatsapp.com/"><img src="../images/Whatsapp.jpg" alt="WhatsApp" width="626" height="626">WhatsApp</a></li>
+                    </ul>
+            </div>
+        </div>        
+         <div class="privado">
+            <p>&copy; 2025 iTechnology-Todos los derechos reservados</p>
+        </div> 
+    </footer>    
+</body>
+</html>

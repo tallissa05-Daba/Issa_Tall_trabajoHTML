@@ -1,0 +1,508 @@
+:root {
+    --background-primero: rgb(32, 58, 97) ;
+    --background-segundo: rgb(225, 243, 243);
+    --background-tercero: rgb(109, 215, 109);
+    --white: #ffffff;
+    --black: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/***Header Cabecera de la pagina****/
+header{
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--background-primero);
+    color: var(--white);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+header div{
+    display: flex;
+    gap: 20px;
+}
+header div img{ 
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+
+
+         /****El estilo de la barra de navegacción dentro del header****/
+header nav{padding: 15px 15px;
+        display:flex;
+    justify-content: space-between;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    stop-color: var(--background-tercero);   
+}
+
+
+header nav ul{display:flex;
+    justify-content: space-between; 
+}
+header nav ul .home .contactoo .presupuesto .producto li{
+    list-style: none;
+}
+header nav ul li a {
+    padding: 3px 10px;
+    text-decoration:none;
+    color:var(--white);
+    border-radius: 50px;
+    border: none;
+    margin: auto 10px;
+    }
+    nav ul li a:hover{
+        background: var(--background-segundo);
+        color: var(--white);
+    }
+    
+         /******Para el inicio***/
+nav ul li a.home, li a:hover{
+        background: var(--background-segundo);
+        color: var(--black);    
+    }
+     /******Para el contacto***/
+nav ul li a.contactoo, li a:hover{
+        background: var(--background-segundo);
+        color: var(--black);   
+    }
+     /******Para el presupuesto***/
+     nav ul li a.presupuesto, li a:hover{
+        background: var(--background-segundo);
+        color: var(--black);   
+    }
+
+     /******Para el producto***/
+nav ul li a.productoo, li a:hover{
+        background: var(--background-segundo);
+        color: var(--black);   
+    }
+           /****THE FLEXIBLE CONTENT****/
+    /* Seccion de Nuestro Credo*/
+main section{
+    min-height: 10vh;
+    margin-bottom: 20px;
+}
+
+.container1 img{
+width: 100%;
+height: 350px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 130px;
+    text-align: center;
+    margin: 50px;
+}
+.color{
+    
+    color: var(--background-tercero);
+}
+
+/***Seccion con el class contenido**/
+.contenido{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+section h3{ 
+    text-align: center;
+    color: var(--background-tercero);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+
+}
+.top-ventas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}  
+.top-venta{
+    height: 350px;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow:  0px 0px 0px 10px var(--background-cuarto);
+} 
+.top-venta:hover{
+    transform: translate(-10px);
+    opacity: 1;
+    cursor: pointer;
+}
+.top-venta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 5px;
+
+}
+
+/****SECCION DE PRESUPUESTO***/
+
+.pre-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 50px;
+    height: 100%;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+    margin: 2% 5% 2% 5%;
+    
+}
+.pre-form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.pre-form div label{
+    text-align: left;
+}
+
+.pre-form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.pre-form input, .pre-form textarea {
+    width: 90%;
+    padding: 10px 15%;
+    margin-bottom: 15px;
+    border:1px solid var(--black);
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+
+.pre-form input[type="submit"]{
+    background-color: var(--background-tercero);
+    padding: 10px 20px;
+    cursor:grab ;
+    border-radius: 3px;
+}
+
+.pre-form input[type="text"]:valid{
+    background-color:   #86ed9e;}
+
+
+   
+.pre-form input[type="text"]:invalid{
+    background-color: hsl(0, 73%, 73%);    
+}
+
+
+    
+/******SECTION DE LOS CONTACTOS******/
+.contact{
+    margin-bottom: 50px;
+    text-align:left;
+    margin: 20px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    width: 65%;
+}
+.contacto div h3{
+    font-size: 22px;
+    /*text-align:;*/
+}
+.contacto div .title_horario{
+    text-align: center;
+    
+}
+.lista-horarioo{
+    text-align: left;
+    margin-left: 130px;
+    
+}
+
+
+    /****Nuestra seccion de galeria*****/
+    section .galeria{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vmin;
+        padding: 0  0 15px; 
+        background-color: rgb(225, 243, 243);  
+    }
+   section .galeria::after{
+        content: "";
+        display: block;
+        flex-grow: 15;
+    }
+    section .galeria .gal {
+        list-style-type: none;
+        height: 200px;
+        flex-grow: 2;
+        transition: 1s;
+
+    }
+    section .galeria .gal img { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: .6s cubic-bezier(0.28, -0.03, 0, 1);
+        box-shadow: 5px 5px 30px var(--black);
+    }
+    section .galeria .gal:hover{
+        transform: scale(1.3);
+        z-index: 2;
+
+    }
+    
+
+
+            /***FOOTER EL PIE DE LA PAGINÁ***/
+
+footer{
+    flex-shrink: 0;
+    border-top: 1px dashed var(--black);
+    height: auto;
+    background-color:var(--background-tercero);
+   
+    
+    
+}
+.contenido-footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 30px 0 20px;
+
+}
+.bloc{
+    width: 40%;
+    margin: 30px;
+}
+    
+
+
+            /***Footer del bloque de los servicios y horarios *****/
+
+.lista-servicio h3,
+.lista-horario h3, 
+.lista-redes h3 {
+    list-style-type: none;
+
+}
+footer h3{
+    font-size: 30px;
+    color:var(--white);
+
+}
+
+.lista-servicio li{
+    padding: 10px ;
+    color: var(--black);
+}
+
+.lista-horario li {
+    padding: 3px ;
+    color: var(--black);
+    text-align: left;
+    }
+
+
+              /***Footer del bloque de los Redes Sociales***/
+
+.lista-redes{
+    position: relative;
+    right: 10px;  
+}
+.lista-redes img{
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px;
+}
+.lista-redes a {
+    text-decoration: none;
+    color:var(--black);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+}
+            /******Footer de los derechos*******/
+.privado{
+    color: var(--white);
+}
+
+
+        /********`PARA LAS DIFERENTES PANTALLAS******/
+        /****Para tablet****/
+@media(max-width: 900px){
+    header, main, footer{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        align-items: center;
+        position: relative;
+    }
+    nav {
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    main section div .top-ventas{
+        flex-direction: column;
+    }
+}
+     /****Para Movíl****/
+@media(max-width: 650px){
+     header, main, footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        
+    }
+    /**La barra de navegación***/
+    header{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        
+        }
+
+    header div{
+        display: flex;
+    }
+    
+        header nav{
+    text-align: left;
+    color: var(--black);
+    }
+    header nav ul{
+        width: 100%;
+        height: 100%; 
+        margin: 2px;
+        font-size: small;
+        margin-left: 0px;
+     }
+    nav form{
+        padding: auto;
+        margin-top: 10px;
+    }
+    /*****El contenido del home**/
+    main{
+        flex-direction: column;
+    }
+    main section div .contenido{
+        flex-direction: column;
+    }
+    .top-ventas{
+        display: contents;
+        align-items: center;
+        
+    }
+    .top-ventas img{
+        width: 50%;
+        height: 50%;
+        margin: 75px;
+        
+    }
+    
+    .contact{
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;       
+    }
+    iframe{
+        width: 75px;
+        height: 75px;
+        display: contents;
+
+    }
+    main section .contacto div{
+        flex-direction: column;
+            }
+            /************lOS PRODUCTOS************/
+    section .galeria{
+        width: 100%;
+        height: 100%;
+    }
+    section .galeria .gal img{
+        width: 100px;
+        height: 100px;
+    }
+    /************Los contactos*****************/
+    .contacto{
+        display: flex;
+        width: 100%;
+    }
+    .contacto div h3{
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .contacto div h3 p{
+        font-size: 8px;
+    }
+    .contacto div h3 ul{
+        font-size: 10px;
+    }
+    .lista-horarioo{
+    text-align: left;
+    margin-left: 10px;
+    font-size: small;
+}
+    /**************El footer*************/
+    footer{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+     footer .contenido-footer div h3, .lista-servicio{
+        font-size: 17px;
+     }
+    footer .contenido-footer{
+        display: flex;
+        margin: 10px 0px 5px 10px;
+        padding: 10px;
+    }
+    .lista-horario{
+        text-align: left;
+        font-size: small;
+    }
+}
